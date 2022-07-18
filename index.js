@@ -25,7 +25,7 @@ app.post('/api/send', function(req, res, next) {
 		var footer_icon = req.body['embed_footer_icon'];
 		var timestamp = req.body['embed_timestamp'];
 		var is_tts = req.body['tts'];
-		var avatar_url = req.body['avatar_url']
+		var avatar_url = req.body['https://imgur.com/a/zzVvcPt']
 		// Converting string to boolean
 		var tts = (is_tts.toLowerCase() === 'true');
 		// Checking if webhook URL is given. If not, then block user from sending message and ask for URL.
@@ -37,8 +37,8 @@ app.post('/api/send', function(req, res, next) {
 		axios
 			.post(webhook_url, {
 				content: message,
-				username: tite,
-				avatar_url: https://imgur.com/a/zzVvcPt,
+				username: username,
+				avatar_url: avatar_url,
 				tts: tts,
 				embeds: [{
 					title: title,
