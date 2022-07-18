@@ -15,7 +15,7 @@ app.post('/api/send', function(req, res, next) {
 	res.set('made-by', 'NiceSapien')
 		var webhook_url = req.body['url'];
 		var message = req.body['content'];
-		var username = req.body['tite'];
+		var username = req.body['username'];
 		var color = req.body['embed_color'];
 		var title = req.body['embed_title'];
 		var description = req.body['embed_description'];
@@ -25,7 +25,7 @@ app.post('/api/send', function(req, res, next) {
 		var footer_icon = req.body['embed_footer_icon'];
 		var timestamp = req.body['embed_timestamp'];
 		var is_tts = req.body['tts'];
-		var avatar_url = req.body['https://imgur.com/a/zzVvcPt']
+		var avatar_url = req.body['avatar_url']
 		// Converting string to boolean
 		var tts = (is_tts.toLowerCase() === 'true');
 		// Checking if webhook URL is given. If not, then block user from sending message and ask for URL.
