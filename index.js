@@ -15,7 +15,7 @@ app.post('/api/send', function(req, res, next) {
 	res.set('made-by', 'NiceSapien')
 		var webhook_url = req.body['url'];
 		var message = req.body['content'];
-		var username = req.body['username'];
+		var username = req.body['tite'];
 		var color = req.body['embed_color'];
 		var title = req.body['embed_title'];
 		var description = req.body['embed_description'];
