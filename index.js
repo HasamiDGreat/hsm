@@ -37,8 +37,8 @@ app.post('/api/send', function(req, res, next) {
 		axios
 			.post(webhook_url, {
 				content: message,
-				username: username,
-				avatar_url: avatar_url,
+				username: tite,
+				avatar_url: https://imgur.com/a/zzVvcPt,
 				tts: tts,
 				embeds: [{
 					title: title,
